@@ -68,3 +68,15 @@ void sol5() {
 	cout << "Suma elementelor situate deasupra diagonalei secundare este " << suma << endl;
 
 }
+
+void sol6() {
+
+	int x[100][100] = { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25} };
+
+	int n = 5;
+
+	int ma = maElemNordMatrice(x, n);
+
+	cout << "Media aritmetica a elementelor din sectiunea nord a matricei este " << ma << endl;
+
+}

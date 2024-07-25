@@ -99,9 +99,28 @@ int sumaElemDeasupraDiagSec(int a[100][100], int n) {
 	int suma = 0;
 
 	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n - i - 1; i++) {
+		for (int j = 0; j < n - i - 1; j++) {
 			suma += a[i][j];
 		}
 	}
 	return suma;
+}
+
+// Afisati media artimetica a elementelor din regiunea nord a matricei
+
+int maElemNordMatrice(int a[100][100], int n) {
+
+	int suma = 0;
+	int ct = 0;
+
+
+	for (int i = 0; i < n; i++) {
+		for (int j = i + 1; j < n - 1 - i; j++) {
+			ct++;
+			suma += a[i][j];
+		}
+	}
+	
+	return suma / ct;
+
 }
