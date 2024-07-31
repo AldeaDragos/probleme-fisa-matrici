@@ -417,3 +417,14 @@ void diagDescSumaElem(int a[100][100], int n) {
 		}
 	}
 }
+
+//Matricea B este transpusa matricei A. B=?;
+
+void transpuaMatriceiB(int a[100][100], int n, int m) {
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << a[j][i] << " ";
+		}
+		cout << endl;
+	}
+}
